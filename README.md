@@ -12,6 +12,8 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#national">National</a></li>
+                <li><a href="#international">International</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -26,7 +28,7 @@
     <section id="services">
         <h2>Our Services</h2>
         <ul>
-            <li>College Admission Assistance</li>
+            <li>College/University Admission Assistance</li>
             <li>Study Abroad Programs</li>
             <li>Test Preparation (SAT, ACT, GRE, etc.)</li>
             <li>Scholarship Opportunities</li>
@@ -43,9 +45,10 @@
         <h2>Contact Us</h2>
         <p>If you have any questions or inquiries, please feel free to reach out to us:</p>
         <ul>
-            <li>Email: info@example.com</li>
+            <li>Email: info.kansasconsulting@gmail.com
+</li>
             <li>Phone: +1 (123) 456-7890</li>
-            <li>Address: 123 Education Street, City, Country</li>
+            <li>Address: Lokanthali, Bhaktapur, Nepal</li>
         </ul>
     </section>
 
