@@ -21,7 +21,7 @@
     </header>
 
     <section id="home">
-        <h2>Welcome to Our Education Consultancy</h2>
+        <h2>Welcome to Kansas National and International Consultig Service</h2>
         <p>We help students achieve their academic goals by providing expert guidance and counseling.</p>
     </section>
 
