@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>Education Consultancy</h1>
+        <h1>Consulting Consultancy</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -21,7 +21,7 @@
     </header>
 
     <section id="home">
-        <h2>Welcome to Kansas National and International Consultig Service</h2>
+        <h2>Welcome to Kansas National and International Consulting Service</h2>
         <p>We help students achieve their academic goals by providing expert guidance and counseling.</p>
     </section>
 
