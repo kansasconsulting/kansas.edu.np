@@ -10,12 +10,33 @@
         <h1>Consulting Consultancy</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#national">National</a></li>
-                <li><a href="#international">International</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <div class="email-container">
+  <a href="mailto:info@universalconsultancy.co.uk" title="Send an email to info@universalconsultancy.co.uk">
+    <span class="email-text">info.kansasconsulting@gmail.com</span>
+  </a>
+</div>
+
+<div class="home-button-container">
+    <p class="home-button-subheading">Welcome to Kansas National and International Consulting Service</p>
+</div>
+<b href="index.html" title="Go to Homepage">
+  <button class="home-button">Home</button>
+
+</b><b href="index.html" title="Go to Homepage">
+  <button class="about us-button">About Us</button>
+
+</b><b href="index.html" title="Go to Homepage">
+  <button class="service-button">Service</button>
+
+  </b><b href="index.html" title="Go to Homepage">
+  <button class="national-button">National</button>
+
+  </b><b href="index.html" title="Go to Homepage">
+  <button class="international-button">International</button>
+  
+  </b><b href="index.html" title="Go to Homepage">
+  <button class="contact us-button">Contact Us</button><li><a href="#home">Home</a></li>
+
             </ul>
         </nav>
     </header>
