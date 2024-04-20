@@ -1,0 +1,675 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.header-topbar-wrapper {
+  width: 100%;
+  background-color: #003a66;
+}
+.header-topbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 20px;
+
+  color: white;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.header-top {
+  line-height: 29px;
+  font-size: 26px;
+}
+.email-info {
+  line-height: 29px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.kansas-logo-wrapper {
+  width: 100%;
+  background-color: white;
+}
+.kansas-logo {
+  width: 98%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+}
+.kansas-logo-left img {
+  width: 26%;
+}
+.kansas-logo-middle {
+  width: 60%;
+  margin-left: 109px;
+}
+.kansas-logo-right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.kansas-logo-right a {
+  text-decoration: none;
+  color: #e02454;
+}
+.kansas-logo-right a:hover {
+  color: #003a66;
+}
+.kansas-logo-right {
+  margin-top: 23px;
+  font-size: 18px;
+  line-height: 37px;
+  font-weight: bold;
+}
+.searchlogo-icon {
+  color: #003a66;
+  line-height: 60px;
+  margin-top: 20px;
+}
+.saerch-bar {
+  margin-top: 12px;
+}
+.fromsearchbar {
+  border: none;
+  color: #003a66;
+  font-size: 15px;
+  border-bottom: 1px solid #99b1c2;
+}
+
+.emailinfo {
+  color: red;
+}
+.email-info a {
+  text-decoration: none;
+  color: white;
+}
+.navbar-wrapper {
+  width: 100%;
+  background-color: #003a66;
+}
+.navbar {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.navbar-box {
+  width: 245px;
+  margin: 0 auto;
+}
+
+.navbar-box a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 20px;
+}
+.navbar-box a:hover {
+  color: #e02454;
+}
+.fromsearchbar-navbar {
+  border: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  width: 255px;
+  line-height: 60px;
+  padding-left: 13px;
+  margin-bottom: 20px;
+  border-radius: 18px;
+}
+.course-searchbar-wrapper {
+  width: 100%;
+  margin-top: 40px;
+}
+.course-searchbar {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.course-searchbar-form {
+  font-size: 15px;
+  width: 255px;
+  padding-left: 13px;
+  height: 55px;
+  border: none;
+}
+.course-searchbar-left {
+  border: 1px solid #003a66;
+  border-radius: 18px;
+  padding-left: 15px;
+  height: 60px;
+}
+.course-searchbar-left i {
+  margin-right: 15px;
+}
+.course-searchbar-right i {
+  margin-right: 15px;
+}
+.course-searchbar-right {
+  border: 1px solid #003a66;
+  border-radius: 18px;
+  padding-left: 15px;
+  height: 60px;
+}
+.course-searchbar-form-right {
+  font-size: 15px;
+  width: 255px;
+  padding-left: 13px;
+  height: 55px;
+  border: none;
+}
+
+.abroad-dream-image-wrapper {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #003a66;
+}
+.student-thoughts {
+  text-align: center;
+  position: absolute;
+  padding-top: 200px;
+  color: white;
+  margin-left: 150px;
+  font-weight: bold;
+  margin-right: 150px;
+}
+.student-thoughts h2 {
+  font-size: 30px;
+  padding-bottom: 12px;
+  line-height: 1.38;
+}
+.student-thoughts p {
+  font-size: 20px;
+}
+.abroad-dream-image-wrapper img {
+  width: 100%;
+  height: 60%;
+}
+.visagranted {
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  color: #e02454;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Sucess-students-wrapper {
+  width: 100%;
+}
+.Sucess-students {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.Sucess-students-images {
+  width: 215px;
+  height: 350px;
+}
+.sucess-images img {
+  width: 100%;
+}
+.student-name p {
+  color: #003a66;
+  font-weight: bold;
+}
+.student-name {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.student-name h3 {
+  color: black;
+  font-weight: 600;
+  font-weight: bold;
+}
+.aus {
+  color: #e02454;
+  font-weight: bold;
+}
+
+.footer-wraper {
+  width: 100%;
+  background-color: #003a66;
+
+  margin-top: 25px;
+  padding-bottom: 50px;
+}
+
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding-top: 20px;
+}
+.footer-box h3 {
+  color: white;
+}
+.footer-box ul li a {
+  text-decoration: none;
+}
+.footer-box ul {
+  text-decoration: none;
+}
+.footer-box li {
+  padding-top: 10px;
+  list-style: none;
+}
+.footer-box a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-box a:hover {
+  color: white;
+}
+.payment-icon-wrapper {
+  display: flex;
+}
+.payment-icon i {
+  font-size: 20px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.payment-icon {
+  background-color: #d5e6ff;
+  width: 40px;
+  margin-top: 10px;
+}
+.intructer-arrow {
+  color: black;
+}
+.becomeinstructer {
+  padding: 20px;
+
+  background-color: yellow;
+}
+.intructor-form .becomeinstructer:hover {
+  background-color: #e02454;
+}
+.newlatter h3 {
+  color: white;
+}
+.newlatter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.updateoffers {
+  padding: 20px;
+  padding-right: 55px;
+}
+.payment-images {
+  display: flex;
+
+  width: 20%;
+}
+.paymentoption-wrapper {
+  margin-top: 20px;
+}
+.fonepay img {
+  width: 10%;
+}
+.esewa img {
+  width: 10%;
+}
+.khalti img {
+  width: 10%;
+}
+
+.payment-option a {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright-section {
+  text-align: center;
+  border-top: 1px solid white;
+  padding: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #003a66;
+}
+.location-images {
+  margin-top: 50px;
+}
+.location-images img {
+  width: 100%;
+}
+.kansas-information-wrapper {
+  width: 100%;
+}
+.kansas-information {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.kansas-information-box-left {
+  background-color: white;
+  width: 400px;
+  padding-left: 30px;
+  margin-top: 50px;
+  box-shadow: 1px 1px 1px 1px white;
+  border-radius: 18px;
+  margin-bottom: 60px;
+  height: 450px;
+}
+.kansas-information-wrapper {
+  background-color: aliceblue;
+}
+.kansas-information-box-left h2 {
+  padding: 20px;
+}
+.kansas-information-box {
+  width: 639px;
+  margin-top: 39px;
+  margin-left: 60px;
+  background-color: white;
+  margin-bottom: 60px;
+}
+.kansas-information-box h3 {
+  padding: 20px;
+}
+.kansas-information-box p {
+  padding-bottom: 5px;
+}
+.your-name-wrapper {
+  margin-top: 10px;
+}
+
+.yourmessage-here {
+  padding: 47px;
+}
+.yourmessage-here input {
+  height: 116px;
+  padding-left: 32px;
+}
+.submit-btn {
+  background-color: green;
+  padding: 15px;
+  margin-left: 90px;
+  border-radius: 18px;
+  color: white;
+}
+.map-icon {
+  margin-bottom: 15px;
+  margin-left: 44px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.map-icon-location {
+  padding-left: 10px;
+}
+.student-text-images {
+  font-weight: 900;
+  background-color: #003a66;
+  color: white;
+  width: 200px;
+}
+.boder-dec {
+  border-bottom: 1px solid white;
+}
+
+.visa-menu-wrapper {
+  width: 100%;
+  background-color: #d5e6ff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.visa-menu-box {
+  height: 50px;
+}
+
+.visa-menu-box a {
+  text-decoration: none;
+  color: #003a66;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 13px 10px;
+  height: 26px;
+  display: inline-block;
+}
+.visa-menu-box:last-child > a {
+  background-color: #e02454;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+}
+.visa-menu-box a:hover {
+  background-color: #003a66;
+  color: white;
+}
+
+
+.service-header-wrapper {
+  width: 100%;
+  background-color: #d5e6ff;
+}
+.service-header {
+  width: 98%;
+  margin: 0 auto;
+  background-color: #d5e6ff;
+}
+.service-header h3 {
+  color: #003a66;
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.service-header p {
+  color: grey;
+  font-size: 18px;
+}
+.visa-working-wrapper {
+  width: 100%;
+  background-color: #d5e6ff;
+}
+.visa-working {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.visa-working-imges {
+  margin-top: 15px;
+}
+.visa-working-imges img {
+  width: 80%;
+}
+.visa-working-imges-right {
+  width: 402px;
+}
+.visa-process-update {
+  width: 380px;
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+}
+.visa-processnumber {
+  color: #e02454;
+  padding-right: 7px;
+}
+.visa-working-imges-right h3 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #003a66;
+  text-align: center;
+}
+.visa-process-left h4 {
+  border: 1px solid gray;
+  padding: 20px;
+  color: #003a66;
+}
+.visa-process-update {
+  margin-bottom: 40px;
+}
+.student-thoughts h1 {
+  color: #003a66;
+  font-size: 90px;
+}
+.countriess {
+  color: #003a66;
+}
+.immigration-images-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+.immigration-images {
+  width: 98%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+}
+.immigration-images-box {
+  margin-bottom: 60px;
+}
+.immigration-images-box img {
+  width: 100%;
+  height: 256px;
+}
+.usa-images img {
+  width: 403px;
+  height: 250px;
+}
+.australia {
+  margin-top: -70px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.challenge-opportunity-wrapper {
+  width: 100%;
+  margin-top: 18px;
+}
+.challenge-opportunity {
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+}
+.challenge {
+  color: grey;
+  padding-top: 18px;
+}
+.challenge-left h3 {
+  color: #e02454;
+  border: 1px solid #e02454;
+  padding: 20px;
+  border-radius: 18px;
+}
+.challenge-left h3:hover {
+  background-color: #003a66;
+  color: white;
+}
+.studet-visa-menu-images {
+  width: 100%;
+  background-color: #d5e6ff;
+}
+.studet-visa-menu-images img {
+  width: 100%;
+}
+.aboutus {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.immigration-header-wrapper {
+  width: 100%;
+  margin-top: 18px;
+}
+.immigration-header {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.immigration-header-left h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 26px;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  color: #7a8a9e;
+  border-bottom: 1px solid #7a8a9e;
+  width: 176px;
+}
+.immigration-tittle {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 18px;
+  letter-spacing: 0.3px;
+  color: #7a8a9e;
+  line-height: 26px;
+}
+.immigration h2 {
+  color: #003a66;
+  font-size: 51px;
+}
+.Advisory {
+  color: #e02454;
+  font-style: italic;
+}
+.immigration-text {
+  color: #7a8a9e;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.immigration-dec h4 {
+  font-size: 22px;
+  line-height: 32px;
+  color: #003a66;
+  padding-top: 30px;
+}
+.immigration-description {
+  color: #7a8a9e;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.realagent h4 {
+  color: #003a66;
+  font-size: 22px;
+  margin-top: 18px;
+}
+.visa-sorted {
+  text-align: center;
+  color: #003a66;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.visa-sorted h2 {
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 57px;
+}
+.steps {
+  color: #e02454;
+  font-style: italic;
+}
+.visa-working-imges-right h3 {
+  margin-top: 20px;
+}
+.fonepay {
+  background-color: #e02454;
+  color: white;
+}
