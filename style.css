@@ -3,673 +3,922 @@
   margin: 0;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-}
-
-.header-topbar-wrapper {
+.fullbody-wrapper {
   width: 100%;
-  background-color: #003a66;
+  height: 100%;
 }
-.header-topbar {
-  display: flex;
-  justify-content: space-between;
+.header-wrapper {
+  width: 100%;
+  background-color: #c1e3e5;
+}
+.header {
+  width: 92%;
   margin: 0 auto;
-  width: 90%;
-  padding-top: 20px;
-
-  color: white;
-  font-weight: bold;
-  padding-bottom: 20px;
-}
-.header-top {
-  line-height: 29px;
-  font-size: 26px;
-}
-.email-info {
-  line-height: 29px;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.kansas-logo-wrapper {
-  width: 100%;
-  background-color: white;
-}
-.kansas-logo {
-  width: 98%;
-  margin: 0 auto;
-  justify-content: space-between;
-  display: flex;
-}
-.kansas-logo-left img {
-  width: 26%;
-}
-.kansas-logo-middle {
-  width: 60%;
-  margin-left: 109px;
-}
-.kansas-logo-right {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.kansas-logo-right a {
-  text-decoration: none;
+.bar-icons {
+  display: none;
+}
+
+@media only screen and (max-width: 1210px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .header-left {
+    flex-wrap: wrap;
+  }
+  .header-right {
+    flex-wrap: wrap;
+  }
+  .number {
+    flex-wrap: wrap;
+  }
+  .mail {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .navbar-wrapper {
+    flex-wrap: wrap;
+  }
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .navbar-left {
+    flex-wrap: wrap;
+  }
+  .navbar-right {
+    flex-wrap: wrap;
+  }
+  .aboutus-header {
+    flex-wrap: wrap;
+  }
+  .equipments-image {
+    flex-wrap: wrap;
+  }
+  .letsgetstrated {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 560px) {
+  .header-right {
+    width: 30% !important;
+  }
+  .number {
+    font-size: 17px !important;
+  }
+  .mail {
+    font-size: 17px !important;
+  }
+
+  .youtube-wrapper video {
+    width: 100% !important;
+    height: 300px !important;
+  }
+  .navbar-wrapper {
+    flex-wrap: wrap;
+  }
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .navbar-left {
+    width: 80% !important;
+  }
+  .navbar-right {
+    display: none !important;
+  }
+  .icon-wrapper {
+    display: block !important;
+    color: #f9f8f7;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .bar-icons {
+    display: none; /* Initially hide the menu */
+    background-color: #00236e; /* Add background color */
+    position: absolute;
+    top: 128px;
+    width: 100%;
+    color: white;
+    margin-left: -20px;
+    z-index: 1;
+  }
+
+  .bar-icons ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    border-top: 1px solid #7d7f82;
+  }
+  .equipments-image {
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+
+  .bar-icons ul li {
+    text-align: center;
+    border-bottom: 1px solid #7d7f82;
+    padding: 6px 0px;
+  }
+
+  .bar-icons ul li a {
+    text-decoration: none;
+    color: #ece7e7;
+    text-align: center;
+  }
+
+  .home {
+    display: none;
+  }
+  .letsgetstrated {
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+
+  .service {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+
+  .about {
+    display: none;
+  }
+  .aboutus-header {
+    top: 225px !important;
+  }
+  .home-page-header {
+    display: none;
+  }
+  .construction-images {
+    flex-wrap: wrap;
+  }
+
+  .news-update {
+    flex-wrap: wrap;
+  }
+  .news-update-left {
+    width: 100%;
+  }
+  .news-update-right {
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+  .about-project-wrapper {
+    flex-wrap: wrap;
+  }
+  .about-projectt {
+    flex-wrap: wrap;
+  }
+  .introducton-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .introducton-wrapper img {
+    width: auto !important;
+    object-fit: cover;
+  }
+  .introducton-wrapper h2 {
+    font-size: 24px !important;
+  }
+  .variousewuments-wrapper {
+    width: 100% !important;
+  }
+
+  .equipments-image {
+    width: 100% !important;
+  }
+  .text {
+    font-size: 17px !important;
+    top: 10px !important;
+    width: 96% !important;
+    left: 10px !important;
+    text-align: center;
+  }
+  .text-middle {
+    font-size: 13px !important;
+    top: 114px !important;
+    width: 96% !important;
+    left: 10px !important;
+    text-align: center;
+  }
+  .text-button {
+    font-size: 13px !important;
+    top: 227px !important;
+    width: 96% !important;
+    left: 10px !important;
+    text-align: center;
+  }
+  .text-motives {
+    font-size: 13px !important;
+    top: 385px !important;
+    width: 96% !important;
+    left: 10px !important;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex-wrap: wrap;
+  }
+  .footer-section {
+    flex-wrap: wrap;
+  }
+  .copy-right-section {
+    flex-wrap: wrap;
+    display: block;
+  }
+  .Getin-touch-wrapper {
+    flex-wrap: wrap;
+    display: block;
+  }
+  .contact-infos-wrapper {
+    flex-wrap: wrap;
+    display: block;
+  }
+  .yourmessage-wrapper {
+    flex-wrap: wrap;
+    display: block;
+  }
+  .locations {
+    flex-wrap: wrap;
+    display: block;
+  }
+
+  .locations-left iframe {
+    width: 100% !important;
+  }
+  .locations-right iframe {
+    width: 350px;
+    height: 250px;
+  }
+
+  .yourmessages {
+    width: 100% !important;
+  }
+  .input-box-wrapper {
+    width: 100% !important;
+    vertical-align: center;
+    flex-wrap: wrap;
+  }
+  .your-name input {
+    width: 230px !important;
+  }
+  .your-email input {
+    width: 230px !important;
+  }
+  .your-number input {
+    width: 230px !important;
+  }
+  .your-message input {
+    width: 230px !important;
+  }
+  .our-approach img {
+    width: 100% !important;
+  }
+  .director {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .contact-infos {
+    flex-wrap: wrap;
+  }
+  .contactus-icon {
+    width: 100% !important;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .locations {
+    flex-wrap: wrap;
+  }
+  .locations-left {
+    width: 100%;
+  }
+  .locations-left iframe {
+    width: 100% !important;
+  }
+  .construction-images img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .aboutus-wrapper {
+    width: 100%;
+  }
+  .construction-images {
+    width: 100% !important;
+  }
+}
+
+.fb-icons i {
   color: #e02454;
+  font-size: 24px;
 }
-.kansas-logo-right a:hover {
-  color: #003a66;
-}
-.kansas-logo-right {
-  margin-top: 23px;
-  font-size: 18px;
-  line-height: 37px;
-  font-weight: bold;
-}
-.searchlogo-icon {
-  color: #003a66;
-  line-height: 60px;
-  margin-top: 20px;
-}
-.saerch-bar {
-  margin-top: 12px;
-}
-.fromsearchbar {
-  border: none;
-  color: #003a66;
-  font-size: 15px;
-  border-bottom: 1px solid #99b1c2;
+.whatsapp i {
+  color: #e02454;
+  font-size: 24px;
 }
 
-.emailinfo {
-  color: red;
+.linkedin i {
+  color: #e02454;
+  font-size: 24px;
 }
-.email-info a {
-  text-decoration: none;
-  color: white;
+.whatsapp i {
+  color: #e02454;
+  font-size: 24px;
+}
+.insta i {
+  color: #e02454;
+  font-size: 24px;
+}
+.google i {
+  color: #e02454;
+  font-size: 24px;
+}
+.no {
+  padding-left: 12px;
+  color: black;
+}
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+.number {
+  color: #e02454;
+  font-size: 24px;
+}
+
+.ma {
+  padding-left: 12px;
+  color: black;
+}
+
+.mail {
+  color: #e02454;
+  font-size: 24px;
+}
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.header-right div a i {
+  font-size: 17px !important;
 }
 .navbar-wrapper {
   width: 100%;
-  background-color: #003a66;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #00236e;
 }
 .navbar {
-  width: 95%;
+  width: 92%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+}
+.navbar-left {
+  width: 100%;
+}
+.navbar-left img {
+  width: 14%;
+  border-radius: 50px;
+}
+.navbar-right {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  padding-bottom: 30px;
+  width: 100%;
+  padding: 22px;
 }
-.navbar-box {
-  width: 245px;
-  margin: 0 auto;
+.icon-wrapper {
+  display: none;
 }
 
-.navbar-box a {
-  color: white;
+.navbar-right a {
   text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  padding-top: 20px;
-}
-.navbar-box a:hover {
-  color: #e02454;
-}
-.fromsearchbar-navbar {
-  border: none;
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-  width: 255px;
-  line-height: 60px;
-  padding-left: 13px;
-  margin-bottom: 20px;
-  border-radius: 18px;
-}
-.course-searchbar-wrapper {
-  width: 100%;
-  margin-top: 40px;
-}
-.course-searchbar {
-  width: 98%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-.course-searchbar-form {
-  font-size: 15px;
-  width: 255px;
-  padding-left: 13px;
-  height: 55px;
-  border: none;
-}
-.course-searchbar-left {
-  border: 1px solid #003a66;
-  border-radius: 18px;
-  padding-left: 15px;
-  height: 60px;
-}
-.course-searchbar-left i {
-  margin-right: 15px;
-}
-.course-searchbar-right i {
-  margin-right: 15px;
-}
-.course-searchbar-right {
-  border: 1px solid #003a66;
-  border-radius: 18px;
-  padding-left: 15px;
-  height: 60px;
-}
-.course-searchbar-form-right {
-  font-size: 15px;
-  width: 255px;
-  padding-left: 13px;
-  height: 55px;
-  border: none;
-}
-
-.abroad-dream-image-wrapper {
-  width: 100%;
-  margin-top: 30px;
-  background-color: #003a66;
-}
-.student-thoughts {
-  text-align: center;
-  position: absolute;
-  padding-top: 200px;
   color: white;
-  margin-left: 150px;
+  font-size: 24px;
   font-weight: bold;
-  margin-right: 150px;
 }
-.student-thoughts h2 {
-  font-size: 30px;
-  padding-bottom: 12px;
-  line-height: 1.38;
-}
-.student-thoughts p {
-  font-size: 20px;
-}
-.abroad-dream-image-wrapper img {
-  width: 100%;
-  height: 60%;
-}
-.visagranted {
-  text-align: center;
-  font-size: 30px;
-  font-style: normal;
+.navbar-right a:hover {
   color: #e02454;
-  margin-top: 20px;
-  margin-bottom: 20px;
+}
+.construction-images-wrapper {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.Sucess-students-wrapper {
+.construction-images img {
+  width: 100%;
+  height: 700px;
+  opacity: 0.4;
+}
+
+.news-update-wrapper {
   width: 100%;
 }
-.Sucess-students {
-  width: 98%;
+.news-update {
+  width: 83%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-.Sucess-students-images {
-  width: 215px;
-  height: 350px;
-}
-.sucess-images img {
-  width: 100%;
-}
-.student-name p {
   color: #003a66;
-  font-weight: bold;
 }
-.student-name {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.student-name h3 {
-  color: black;
-  font-weight: 600;
-  font-weight: bold;
-}
-.aus {
-  color: #e02454;
-  font-weight: bold;
-}
-
-.footer-wraper {
-  width: 100%;
-  background-color: #003a66;
-
-  margin-top: 25px;
-  padding-bottom: 50px;
-}
-
-.footer {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 18px;
-  padding-top: 20px;
-}
-.footer-box h3 {
-  color: white;
-}
-.footer-box ul li a {
-  text-decoration: none;
-}
-.footer-box ul {
-  text-decoration: none;
-}
-.footer-box li {
+.youtube-wrapper {
   padding-top: 10px;
-  list-style: none;
-}
-.footer-box a {
-  color: rgba(255, 255, 255, 0.5);
-}
-.footer-box a:hover {
-  color: white;
-}
-.payment-icon-wrapper {
-  display: flex;
-}
-.payment-icon i {
-  font-size: 20px;
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-}
-.payment-icon {
-  background-color: #d5e6ff;
-  width: 40px;
-  margin-top: 10px;
-}
-.intructer-arrow {
-  color: black;
-}
-.becomeinstructer {
-  padding: 20px;
-
-  background-color: yellow;
-}
-.intructor-form .becomeinstructer:hover {
-  background-color: #e02454;
-}
-.newlatter h3 {
-  color: white;
-}
-.newlatter {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.updateoffers {
-  padding: 20px;
-  padding-right: 55px;
-}
-.payment-images {
-  display: flex;
-
-  width: 20%;
-}
-.paymentoption-wrapper {
-  margin-top: 20px;
-}
-.fonepay img {
-  width: 10%;
-}
-.esewa img {
-  width: 10%;
-}
-.khalti img {
-  width: 10%;
-}
-
-.payment-option a {
-  text-decoration: none;
-  color: white;
-}
-
-.copyright-section {
-  text-align: center;
-  border-top: 1px solid white;
-  padding: 12px;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: #003a66;
-}
-.location-images {
-  margin-top: 50px;
-}
-.location-images img {
   width: 100%;
 }
-.kansas-information-wrapper {
+
+.youtube-wrapper iframe {
   width: 100%;
-}
-.kansas-information {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-.kansas-information-box-left {
-  background-color: white;
-  width: 400px;
-  padding-left: 30px;
-  margin-top: 50px;
-  box-shadow: 1px 1px 1px 1px white;
-  border-radius: 18px;
-  margin-bottom: 60px;
   height: 450px;
 }
-.kansas-information-wrapper {
-  background-color: aliceblue;
-}
-.kansas-information-box-left h2 {
-  padding: 20px;
-}
-.kansas-information-box {
-  width: 639px;
-  margin-top: 39px;
-  margin-left: 60px;
-  background-color: white;
-  margin-bottom: 60px;
-}
-.kansas-information-box h3 {
-  padding: 20px;
-}
-.kansas-information-box p {
-  padding-bottom: 5px;
-}
-.your-name-wrapper {
+
+.aboutbussnes {
+  background-color: #c1e3e5;
   margin-top: 10px;
-}
-
-.yourmessage-here {
-  padding: 47px;
-}
-.yourmessage-here input {
-  height: 116px;
-  padding-left: 32px;
-}
-.submit-btn {
-  background-color: green;
-  padding: 15px;
-  margin-left: 90px;
-  border-radius: 18px;
-  color: white;
-}
-.map-icon {
-  margin-bottom: 15px;
-  margin-left: 44px;
-  line-height: 26px;
-  font-weight: 400;
-}
-.map-icon-location {
-  padding-left: 10px;
-}
-.student-text-images {
-  font-weight: 900;
-  background-color: #003a66;
-  color: white;
-  width: 200px;
-}
-.boder-dec {
-  border-bottom: 1px solid white;
-}
-
-.visa-menu-wrapper {
-  width: 100%;
-  background-color: #d5e6ff;
-  display: flex;
-  justify-content: space-around;
-}
-
-.visa-menu-box {
-  height: 50px;
-}
-
-.visa-menu-box a {
-  text-decoration: none;
-  color: #003a66;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 13px 10px;
-  height: 26px;
-  display: inline-block;
-}
-.visa-menu-box:last-child > a {
-  background-color: #e02454;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 20px;
-}
-.visa-menu-box a:hover {
-  background-color: #003a66;
-  color: white;
-}
-
-
-.service-header-wrapper {
-  width: 100%;
-  background-color: #d5e6ff;
-}
-.service-header {
-  width: 98%;
-  margin: 0 auto;
-  background-color: #d5e6ff;
-}
-.service-header h3 {
-  color: #003a66;
-  font-size: 26px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.service-header p {
-  color: grey;
-  font-size: 18px;
-}
-.visa-working-wrapper {
-  width: 100%;
-  background-color: #d5e6ff;
-}
-.visa-working {
-  width: 98%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.visa-working-imges {
-  margin-top: 15px;
-}
-.visa-working-imges img {
+  font-size: 16px;
+  padding: 10px;
   width: 80%;
 }
-.visa-working-imges-right {
-  width: 402px;
+.corporateoffice {
+  color: black;
+  padding-top: 10px;
 }
-.visa-process-update {
-  width: 380px;
-  justify-content: space-between;
-  margin: 0 auto;
-  display: flex;
+.corporateoffice ul li {
+  list-style: none;
 }
-.visa-processnumber {
+.registered {
+  padding-top: 10px;
+  color: black;
+}
+.registered ul li {
+  list-style: none;
+}
+.for-business {
+  padding-top: 10px;
+  color: black;
+}
+.for-business ul li {
+  list-style: none;
+}
+.news-update-right {
+  margin-left: 25px;
+  width: 100%;
+}
+.contact-info {
   color: #e02454;
-  padding-right: 7px;
+  padding-left: 5px;
 }
-.visa-working-imges-right h3 {
-  margin-bottom: 20px;
+.about-project-wrapper {
+  width: 100%;
+}
+.about-project-wrapper {
+  width: 100%;
+}
+.about-project {
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid black;
+  color: #003a66;
   font-size: 26px;
-  color: #003a66;
-  text-align: center;
-}
-.visa-process-left h4 {
-  border: 1px solid gray;
-  padding: 20px;
-  color: #003a66;
-}
-.visa-process-update {
-  margin-bottom: 40px;
-}
-.student-thoughts h1 {
-  color: #003a66;
-  font-size: 90px;
-}
-.countriess {
-  color: #003a66;
-}
-.immigration-images-wrapper {
-  width: 100%;
-  margin-top: 20px;
-}
-.immigration-images {
-  width: 98%;
-  margin: 0 auto;
-  justify-content: space-between;
-  display: flex;
-}
-.immigration-images-box {
-  margin-bottom: 60px;
-}
-.immigration-images-box img {
-  width: 100%;
-  height: 256px;
-}
-.usa-images img {
-  width: 403px;
-  height: 250px;
-}
-.australia {
-  margin-top: -70px;
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-}
-.challenge-opportunity-wrapper {
-  width: 100%;
-  margin-top: 18px;
-}
-.challenge-opportunity {
-  width: 40%;
-  margin: 0 auto;
-  justify-content: space-between;
-  display: flex;
-}
-.challenge {
-  color: grey;
-  padding-top: 18px;
-}
-.challenge-left h3 {
-  color: #e02454;
-  border: 1px solid #e02454;
-  padding: 20px;
-  border-radius: 18px;
-}
-.challenge-left h3:hover {
-  background-color: #003a66;
-  color: white;
-}
-.studet-visa-menu-images {
-  width: 100%;
-  background-color: #d5e6ff;
-}
-.studet-visa-menu-images img {
-  width: 100%;
-}
-.aboutus {
-  color: white;
-  border-bottom: 1px solid white;
-}
-.immigration-header-wrapper {
-  width: 100%;
-  margin-top: 18px;
-}
-.immigration-header {
-  width: 98%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 80px;
-}
-.immigration-header-left h3 {
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 26px;
-  font-size: 13px;
-  letter-spacing: 0.3px;
-  color: #7a8a9e;
-  border-bottom: 1px solid #7a8a9e;
-  width: 176px;
-}
-.immigration-tittle {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 13px;
-  margin-bottom: 18px;
-  letter-spacing: 0.3px;
-  color: #7a8a9e;
-  line-height: 26px;
-}
-.immigration h2 {
-  color: #003a66;
-  font-size: 51px;
-}
-.Advisory {
-  color: #e02454;
-  font-style: italic;
-}
-.immigration-text {
-  color: #7a8a9e;
-  font-size: 18px;
-  margin-top: 15px;
+  padding-top: 12px;
 }
 
-.immigration-dec h4 {
-  font-size: 22px;
-  line-height: 32px;
-  color: #003a66;
-  padding-top: 30px;
+.introducton-wrapper {
+  width: 100%;
+  position: relative;
 }
-.immigration-description {
-  color: #7a8a9e;
+.introducton-wrapper img {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+.text {
+  position: absolute;
+  font-weight: 200;
+  font-size: 19px;
+  top: 81px;
+  width: 60%;
+  margin: 0 auto;
+  left: 220px;
+}
+.text h2 {
+  text-align: center;
+  padding-bottom: 10px;
+
+  font-size: 45px;
+  font-weight: bold;
+  color: #e02454;
+}
+.text p {
+  text-align: center;
+  text-align: justify;
+  color: #00236e;
+}
+.text-middle {
+  position: absolute;
+  font-weight: 200;
   font-size: 18px;
-  margin-top: 15px;
+  top: 227px;
+  width: 60%;
+  margin: 0 auto;
+  left: 220px;
 }
-.realagent h4 {
+.text-middle h2 {
+  text-align: center;
+  padding-bottom: 10px;
+
+  font-size: 45px;
+  font-weight: bold;
+  color: #e02454;
+}
+.text-middle p {
+  text-align: center;
+  text-align: justify;
+  color: #00236e;
+}
+.text-button {
+  position: absolute;
+  font-weight: 200;
+  font-size: 19px;
+  top: 224px;
+  width: 60%;
+  margin: 0 auto;
+  left: 220px;
+}
+.text-button h2 {
+  text-align: center;
+  padding-bottom: 10px;
+
+  font-size: 45px;
+  font-weight: bold;
+  color: #e02454;
+}
+.text-button p {
+  text-align: center;
+  text-align: justify;
+  color: #00236e;
+}
+
+.text-motives {
+  position: absolute;
+  font-weight: 200;
+  font-size: 19px;
+  top: 366px;
+  width: 60%;
+  margin: 0 auto;
+  left: 220px;
+}
+.text-motives h2 {
+  text-align: center;
+  padding-bottom: 10px;
+
+  font-size: 45px;
+  font-weight: bold;
+  color: #e02454;
+}
+.text-motives p {
+  text-align: center;
+  text-align: justify;
+  color: #00236e;
+}
+
+.aboutus-wrapper {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 27px;
+}
+.about-us {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.aboutus-header:hover {
+  color: #e02454;
+}
+.our-approach {
+  color: #e02454;
+}
+.our-approach :hover {
   color: #003a66;
-  font-size: 22px;
-  margin-top: 18px;
 }
-.visa-sorted {
+.our-approach-text {
+  color: #00236e;
+  padding-top: 10px;
+  font-weight: bold;
+  text-align: justify;
+  padding-bottom: 50px;
+  margin-left: 30px;
+}
+.aboutus-header {
+  position: absolute;
+  top: 274px;
+  left: 70px;
+  font-size: 24px;
+  margin-bottom: 4px;
+  color: #003a66;
+}
+.home-page-header {
+  font-size: 56px;
+  /* width: 1100px; */
+  font-weight: bold;
+}
+.contactus-header {
+  border-bottom: 2px solid #003a66;
+  width: 234px;
+}
+.aboutus-header-top {
+  border-bottom: 2px solid #003a66;
+}
+.our-services-header {
+  border-bottom: 2px solid #003a66;
+}
+.our-project-header {
+  border-bottom: 2px solid #003a66;
+  width: 277px;
+}
+
+.construction-images {
+  position: relative;
+}
+.Getin-touch-wrapper {
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+}
+.Getin-touch-wrapper h2 {
+  color: #003a66;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.Getin-touch-wrapper p {
+  color: black;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.Getin-touch-wrapper p:hover {
+  color: #e02454;
+}
+
+.footer-section-wrapper {
+  width: 100%;
+  background-color: #cbdefc;
+  padding-bottom: 20px;
+}
+.footer-section {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section-box {
+  padding-top: 20px;
+}
+.footer-section-box h3 {
+  padding-bottom: 6px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #003a66;
+}
+.footer-section-box a {
+  text-decoration: none;
+  color: #003a66;
+}
+
+.footer-section-box ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.footer-section-box ul li a {
+  text-decoration: none;
+  color: #00236e;
+}
+.footer-section-box ul li a:hover {
+  color: #e02454;
+}
+.copy-right-section {
+  width: 100%;
+  text-align: center;
+  background-color: #003a66;
+  color: #dadada;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.copy-right {
+  width: 92%;
+  margin: 0 auto;
+}
+.contact-infos-wrapper {
+  width: 100%;
+}
+.contact-infos {
+  width: 77%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: #003a66;
+}
+.contactus-icon h1 {
+  color: #003a66;
+}
+.contacts-no i {
+  color: #e02454;
+  font-size: 18px;
+
+  padding: 10px;
+}
+.address i {
+  color: #e02454;
+  font-size: 18px;
+  padding: 10px;
+}
+.numbers {
+  padding-left: 10px;
+}
+.yourmessage-wrapper {
+  width: 100%;
+}
+.yourmessages {
+  width: 60%;
+  margin: 0 auto;
   text-align: center;
   color: #003a66;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 24px;
 }
-.visa-sorted h2 {
-  font-weight: 600;
-  font-size: 46px;
-  line-height: 57px;
+.yourmessages h3 {
+  padding-bottom: 13px;
+  font-size: 24px;
 }
-.steps {
-  color: #e02454;
-  font-style: italic;
+.yourmessages p {
+  font-size: 18px;
 }
-.visa-working-imges-right h3 {
-  margin-top: 20px;
+.your-name input {
+  width: 488px;
+  margin: 13px;
+  padding: 10px;
 }
-.fonepay {
-  background-color: #e02454;
+.your-email input {
+  width: 488px;
+  margin: 13px;
+  padding: 10px;
+}
+.your-number input {
+  width: 488px;
+  margin: 13px;
+  padding: 10px;
+}
+.your-message input {
+  width: 488px;
+  height: 200px;
+  margin: 13px;
+  padding: 10px;
+}
+.messages {
+  background-color: #003a66;
   color: white;
+  padding: 13px;
+  margin: 17px;
+  width: 200px;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+.locations-wrapper {
+  width: 100%;
+}
+.locations {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.variousewuments-wrapper {
+  width: 100%;
+
+  color: #e02454;
+  font-size: 36px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.variousewuments-wrapper :hover {
+  color: #00236e;
+}
+.equipments-image {
+  width: 92%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+.equipments-image-box {
+  width: 100%;
+  padding: 20px;
+}
+.equipments-image-box img {
+  width: 100%;
+  height: 350px;
+}
+.equmints-list-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.equ-list {
+  text-align: center;
+  color: #e02454;
+  border-top: 1px solid #00236e;
+  border-bottom: 1px solid #00236e;
+  padding: 5px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+.equiments-des {
+  display: flex;
+  justify-content: space-between;
+}
+.equiments-des-box {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+}
+.equiments-des-box li {
+  list-style: none;
+  padding: 2%;
+  font-size: 14px;
+}
+.letsgetstrated {
+  background-color: #c1e3e5;
+  color: black;
+  text-align: center;
+  padding: 25px;
+}
+.letsgetstrated h1 {
+  padding-bottom: 12px;
+}
+.letsgetstrated p {
+  text-align: justify;
+}
+.our-approach img {
+  width: 100%;
+}
+.director {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.locations-left iframe {
+  width: 100%;
+  height: 650px;
+}
+.career-wrapper {
+  width: 72%;
+  margin: 0 auto;
+  margin: 20px;
+  color: #00236e;
+  font-size: 24px;
+}
+.career-wrapper p {
+  padding-top: 12px;
+  padding-left: 24px;
+}
+.c-dec {
+  color: #333;
+}
+.ongoing-desc {
+  color: green;
+}
+.kansas-contact {
+  width: 92%;
+  margin: 0 auto;
+  color: #e02454;
+  font-size: 24px;
+  padding: 10px;
+}
+.kansas-contact li {
+  list-style: none;
+}
+.kansas-contact a {
+  text-decoration: none;
+  color: black;
+}
+.construction-images {
+  width: 100%;
+}
+.letsgetstrated {
+  width: 100%;
 }
