@@ -1,265 +1,563 @@
-/* Reset */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kansas Education Consultancy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
 
-/* Header Topbar */
-.header-topbar-wrapper {
-  width: 100%;
-  background-color: #003a66;
-}
-.header-topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
-  padding: 15px 0;
-  color: white;
-  font-weight: bold;
-  flex-wrap: wrap;
-}
-.header-top {
-  font-size: 22px;
-  line-height: 28px;
-}
-.email-info {
-  font-size: 16px;
-  font-weight: bold;
-}
-.email-info a {
-  text-decoration: none;
-  color: white;
-}
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: 2px solid #003a66;
+            outline-offset: 2px;
+        }
 
-/* Logo Section */
-.kansas-logo-wrapper {
-  width: 100%;
-  background-color: white;
-}
-.kansas-logo {
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 15px 0;
-}
-.kansas-logo-left img {
-  max-width: 150px;
-  height: auto;
-}
-.kansas-logo-middle {
-  flex: 1;
-  text-align: center;
-}
-.kansas-logo-right {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-.kansas-logo-right a {
-  text-decoration: none;
-  color: #e02454;
-  font-size: 16px;
-  font-weight: bold;
-}
-.kansas-logo-right a:hover {
-  color: #003a66;
-}
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
 
-/* Navbar */
-.navbar-wrapper {
-  width: 100%;
-  background-color: #003a66;
-}
-.navbar {
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 15px 0;
-}
-.navbar-box a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 8px 12px;
-  display: inline-block;
-}
-.navbar-box a:hover {
-  color: #e02454;
-}
+        .header-topbar-wrapper {
+            width: 100%;
+            background-color: #003a66;
+        }
 
-/* Course Search */
-.course-searchbar-wrapper {
-  width: 100%;
-  margin: 30px 0;
-}
-.course-searchbar {
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-.course-searchbar-left,
-.course-searchbar-right {
-  border: 1px solid #003a66;
-  border-radius: 18px;
-  padding: 10px 15px;
-  flex: 1 1 250px;
-  display: flex;
-  align-items: center;
-}
-.course-searchbar-form,
-.course-searchbar-form-right {
-  border: none;
-  font-size: 15px;
-  flex: 1;
-  padding: 8px;
-}
+        .header-topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            color: white;
+        }
 
-/* Hero Section */
-.abroad-dream-image-wrapper {
-  position: relative;
-  width: 100%;
-  background-color: #003a66;
-}
-.abroad-dream-image-wrapper img {
-  width: 100%;
-  height: auto;
-}
-.student-thoughts {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  padding: 10px;
-  max-width: 90%;
-}
-.student-thoughts h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-.student-thoughts p {
-  font-size: 18px;
-}
+        .header-top {
+            font-size: 22px;
+            font-weight: bold;
+        }
 
-/* Success Students */
-.Sucess-students-wrapper {
-  width: 100%;
-}
-.Sucess-students {
-  width: 95%;
-  margin: 20px auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-.Sucess-students-images {
-  max-width: 220px;
-  flex: 1 1 150px;
-  text-align: center;
-}
-.sucess-images img {
-  width: 100%;
-  border-radius: 8px;
-}
-.student-name {
-  margin-top: 12px;
-}
-.student-name h3 {
-  font-weight: bold;
-  color: black;
-}
-.student-name p {
-  color: #003a66;
-  font-weight: bold;
-}
-.aus {
-  color: #e02454;
-  font-weight: bold;
-}
+        .email-info {
+            font-size: 16px;
+        }
 
-/* Footer */
-.footer-wraper {
-  width: 100%;
-  background-color: #003a66;
-  margin-top: 25px;
-  padding: 30px 0;
-}
-.footer {
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
-}
-.footer-box h3 {
-  color: white;
-}
-.footer-box a {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
-.footer-box a:hover {
-  color: white;
-}
-.copyright-section {
-  text-align: center;
-  border-top: 1px solid white;
-  padding: 12px;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #003a66;
-}
+        .email-info a {
+            color: white;
+            text-decoration: none;
+        }
 
-/* Responsive Fix */
-@media (max-width: 768px) {
-  .header-topbar {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-  .kansas-logo {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-  }
-  .student-thoughts h2 {
-    font-size: 22px;
-  }
-  .student-thoughts p {
-    font-size: 16px;
-  }
-  .Sucess-students {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
+        .email-info a:hover {
+            text-decoration: underline;
+        }
+
+        .kansas-logo-wrapper {
+            background-color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .kansas-logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .kansas-logo-left img {
+            height: 60px;
+            width: auto;
+        }
+
+        .kansas-logo-middle {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .kansas-logo-middle h1 {
+            color: #003a66;
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .kansas-logo-middle p {
+            color: #7a8a9e;
+            font-size: 14px;
+            margin: 5px 0 0;
+        }
+
+        .kansas-logo-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .search-bar input {
+            border: none;
+            border-bottom: 1px solid #99b1c2;
+            padding: 5px 10px;
+            font-size: 16px;
+            color: #003a66;
+            width: 200px;
+        }
+
+        .search-bar button {
+            background: none;
+            border: none;
+            color: #003a66;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .navbar-wrapper {
+            background-color: #003a66;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #e02454;
+        }
+
+        .hero-section {
+            position: relative;
+            margin: 30px 0;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 58, 102, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 80%;
+        }
+
+        .hero-text h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e02454;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #003a66;
+        }
+
+        .services-section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            color: #003a66;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: #7a8a9e;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 20px;
+        }
+
+        .service-content h3 {
+            color: #003a66;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .service-content p {
+            color: #7a8a9e;
+            margin-bottom: 20px;
+        }
+
+        .success-stories {
+            padding: 50px 0;
+        }
+
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .student-card {
+            text-align: center;
+        }
+
+        .student-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .student-card h3 {
+            color: #003a66;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .student-card p {
+            color: #7a8a9e;
+            margin-bottom: 5px;
+        }
+
+        .student-card .country {
+            color: #e02454;
+            font-weight: bold;
+        }
+
+        .footer-wraper {
+            background-color: #003a66;
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-box h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .footer-box ul {
+            list-style: none;
+        }
+
+        .footer-box ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-box a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-box a:hover {
+            color: white;
+        }
+
+        .newsletter input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .copyright-section {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        @media (max-width: 768px) {
+            .header-topbar, .kansas-logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-top, .email-info {
+                margin-bottom: 10px;
+            }
+            
+            .kansas-logo-left, .kansas-logo-middle, .kansas-logo-right {
+                margin-bottom: 15px;
+            }
+            
+            .navbar {
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                position: relative;
+                transform: none;
+                top: auto;
+                left: auto;
+                margin: 20px auto;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Topbar -->
+    <div class="header-topbar-wrapper">
+        <div class="container header-topbar">
+            <div class="header-top">Kansas Education Consultancy</div>
+            <div class="email-info">
+                <a href="mailto:info@kansas.com.np"><i class="fas fa-envelope"></i> info@kansas.com.np</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo and Navigation -->
+    <div class="kansas-logo-wrapper">
+        <div class="container kansas-logo">
+            <div class="kansas-logo-left">
+                <img src="https://via.placeholder.com/150x60?text=Kansas+Logo" alt="Kansas Logo">
+            </div>
+            <div class="kansas-logo-middle">
+                <h1>Kansas Education Consultancy</h1>
+                <p>Your Pathway to Global Education</p>
+            </div>
+            <div class="kansas-logo-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navbar-wrapper">
+        <div class="container navbar">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Study Destinations</a>
+            <a href="#">Test Preparation</a>
+            <a href="#">Success Stories</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container hero-section">
+        <img src="https://via.placeholder.com/1200x400?text=Study+Abroad+With+Kansas" alt="Study Abroad" class="hero-image">
+        <div class="hero-text">
+            <h2>Make Your Study Abroad Dream a Reality</h2>
+            <p>We provide expert guidance for students seeking international education opportunities</p>
+            <a href="#" class="btn">Get Free Consultation</a>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We offer comprehensive services to help you achieve your international education goals</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/300x200?text=Admission+Guidance" alt="Admission Guidance">
+                    <div class="service-content">
+                        <h3>Admission Guidance</h3>
+                        <p>Expert assistance in selecting the right university and program for your career goals.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/300x200?text=Visa+Assistance" alt="Visa Assistance">
+                    <div class="service-content">
+                        <h3>Visa Assistance</h3>
+                        <p>Complete guidance and documentation support for student visa applications.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/300x200?text=Test+Preparation" alt="Test Preparation">
+                    <div class="service-content">
+                        <h3>Test Preparation</h3>
+                        <p>Comprehensive coaching for IELTS, TOEFL, SAT, GRE, and other standardized tests.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Stories -->
+    <div class="success-stories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Successful Students</h2>
+                <p>Meet some of our students who have achieved their dreams of studying abroad</p>
+            </div>
+            <div class="students-grid">
+                <div class="student-card">
+                    <img src="https://via.placeholder.com/250x300?text=Student+1" alt="Student 1">
+                    <h3>Rahul Sharma</h3>
+                    <p>Computer Science</p>
+                    <p class="country">Australia</p>
+                </div>
+                <div class="student-card">
+                    <img src="https://via.placeholder.com/250x300?text=Student+2" alt="Student 2">
+                    <h3>Priya Patel</h3>
+                    <p>Business Administration</p>
+                    <p class="country">United States</p>
+                </div>
+                <div class="student-card">
+                    <img src="https://via.placeholder.com/250x300?text=Student+3" alt="Student 3">
+                    <h3>Anil Gurung</h3>
+                    <p>Engineering</p>
+                    <p class="country">Canada</p>
+                </div>
+                <div class="student-card">
+                    <img src="https://via.placeholder.com/250x300?text=Student+4" alt="Student 4">
+                    <h3>Sunita Thapa</h3>
+                    <p>Health Sciences</p>
+                    <p class="country">United Kingdom</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-wraper">
+        <div class="container">
+            <div class="footer">
+                <div class="footer-box">
+                    <h3>About Kansas</h3>
+                    <p>Kansas Education Consultancy has been helping students achieve their dreams of international education since 2010.</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Study Destinations</a></li>
+                        <li><a href="#">Test Preparation</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+                    <p><i class="fas fa-phone"></i> +977 1 4123456</p>
+                    <p><i class="fas fa-envelope"></i> info@kansas.com.np</p>
+                </div>
+                <div class="footer-box newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and offers</p>
+                    <input type="email" placeholder="Your Email">
+                    <a href="#" class="btn">Subscribe</a>
+                </div>
+            </div>
+            <div class="copyright-section">
+                <p>&copy; 2023 Kansas Education Consultancy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple JavaScript for responsive navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.innerWidth < 768) {
+                navbar.style.flexDirection = 'column';
+            }
+            
+            window.addEventListener('resize', function() {
+                if (window.innerWidth < 768) {
+                    navbar.style.flexDirection = 'column';
+                } else {
+                    navbar.style.flexDirection = 'row';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
