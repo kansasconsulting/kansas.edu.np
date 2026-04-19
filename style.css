@@ -449,7 +449,7 @@ $news_status    = $_GET['newsletter'] ?? '';
         <div class="container header-topbar">
             <div class="header-top">Kansas Education Consultancy</div>
             <div class="email-info">
-                <a href="mailto:info@kansas.com.np"><i class="fas fa-envelope"></i> info@kansas.com.np</a>
+                <a href="mailto:info@kansas.com.np"><i class="fas fa-envelope"></i> info.kansasconsulting@gmail.com</a>
             </div>
         </div>
     </div>
