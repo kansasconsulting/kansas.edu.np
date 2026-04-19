@@ -1,3 +1,8 @@
+<?php
+// Optional: show simple success/error messages after redirect
+$contact_status = $_GET['contact'] ?? '';
+$news_status    = $_GET['newsletter'] ?? '';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -192,6 +197,8 @@
             text-decoration: none;
             font-weight: bold;
             transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
         }
 
         .btn:hover {
@@ -274,4 +281,419 @@
             text-align: center;
         }
 
-        .student-card 
+        .student-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .student-card h3 {
+            color: #003a66;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .student-card p {
+            color: #7a8a9e;
+            margin-bottom: 5px;
+        }
+
+        .student-card .country {
+            color: #e02454;
+            font-weight: bold;
+        }
+
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #003a66;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px 10px;
+            border-radius: 4px;
+            border: 1px solid #ccd4dd;
+            font-size: 14px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .status-message {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .status-success {
+            color: #007c3b;
+        }
+
+        .status-error {
+            color: #b30021;
+        }
+
+        .footer-wraper {
+            background-color: #003a66;
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-box h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .footer-box ul {
+            list-style: none;
+        }
+
+        .footer-box ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-box a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-box a:hover {
+            color: white;
+        }
+
+        .newsletter input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .newsletter .btn {
+            width: 100%;
+            text-align: center;
+        }
+
+        .copyright-section {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        @media (max-width: 768px) {
+            .header-topbar, .kansas-logo {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-top, .email-info {
+                margin-bottom: 10px;
+            }
+
+            .kansas-logo-left, .kansas-logo-middle, .kansas-logo-right {
+                margin-bottom: 15px;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            .hero-text {
+                position: relative;
+                transform: none;
+                top: auto;
+                left: auto;
+                margin: 20px auto;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Topbar -->
+    <div class="header-topbar-wrapper">
+        <div class="container header-topbar">
+            <div class="header-top">Kansas Education Consultancy</div>
+            <div class="email-info">
+                <a href="mailto:info@kansas.com.np"><i class="fas fa-envelope"></i> info@kansas.com.np</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo and Navigation -->
+    <div class="kansas-logo-wrapper">
+        <div class="container kansas-logo">
+            <div class="kansas-logo-left">
+                <img src="https://via.placeholder.com/150x60?text=Kansas+Logo" alt="Kansas Logo">
+            </div>
+            <div class="kansas-logo-middle">
+                <h1>Kansas Education Consultancy</h1>
+                <p>Your Pathway to Global Education</p>
+            </div>
+            <div class="kansas-logo-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navbar-wrapper">
+        <div class="container navbar">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Study Destinations</a>
+            <a href="#">Test Preparation</a>
+            <a href="#">Success Stories</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container hero-section">
+        <img src="https://via.placeholder.com/1200x400?text=Study+Abroad+With+Kansas" alt="Study Abroad" class="hero-image">
+        <div class="hero-text">
+            <h2>Make Your Study Abroad Dream a Reality</h2>
+            <p>We provide expert guidance for students seeking international education opportunities</p>
+            <a href="#contact" class="btn">Get Free Consultation</a>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We offer comprehensive services to help you achieve your international education goals</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/300x200?text=Admission+Guidance" alt="Admission Guidance">
+                    <div class="service-content">
+                        <h3>Admission Guidance</h3>
+                        <p>Expert assistance in selecting the right university and program for your career goals.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/300x200?text=Visa+Assistance" alt="Visa Assistance">
+                    <div class="service-content">
+                        <h3>Visa Assistance</h3>
+                        <p>Complete guidance and documentation support for student visa applications.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/300x200?text=Test+Preparation" alt="Test Preparation">
+                    <div class="service-content">
+                        <h3>Test Preparation</h3>
+                        <p>Comprehensive coaching for IELTS, TOEFL, SAT, GRE, and other standardized tests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Stories -->
+    <div class="success-stories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Successful Students</h2>
+            </div>
+            <div class="students-grid">
+                <div class="student-card">
+                    <img src="https://via.placeholder.com/250x300?text=Student+1" alt="Student 1">
+                    <h3>Rahul Sharma</h3>
+                    <p>Computer Science</p>
+                    <p class="country">Australia</p>
+                </div>
+                <div class="student-card">
+                    <img src="https://via.placeholder.com/250x300?text=Student+2" alt="Student 2">
+                    <h3>Priya Patel</h3>
+                    <p>Business Administration</p>
+                    <p class="country">United States</p>
+                </div>
+                <div class="student-card">
+                    <img src="https://via.placeholder.com/250x300?text=Student+3" alt="Student 3">
+                    <h3>Anil Gurung</h3>
+                    <p>Engineering</p>
+                    <p class="country">Canada</p>
+                </div>
+                <div class="student-card">
+                    <img src="https://via.placeholder.com/250x300?text=Student+4" alt="Student 4">
+                    <h3>Sunita Thapa</h3>
+                    <p>Health Sciences</p>
+                    <p class="country">United Kingdom</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Quick Enquiry</h2>
+                <p>Send us your details and our counsellor will contact you.</p>
+            </div>
+
+            <?php if ($contact_status === 'success'): ?>
+                <p class="status-message status-success">Thank you! Your enquiry has been sent.</p>
+            <?php elseif ($contact_status === 'error'): ?>
+                <p class="status-message status-error">Sorry, there was a problem sending your enquiry.</p>
+            <?php endif; ?>
+
+            <form action="process.php" method="POST" class="contact-form">
+                <input type="hidden" name="form_type" value="contact">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone / WhatsApp</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Preferred Study Country</label>
+                    <select id="country" name="country">
+                        <option value="">Select country</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="USA">USA</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Canada">Canada</option>
+                        <option value="India">India</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="Japan">Japan</option>
+                        <option value="South Korea">South Korea</option>
+                        <option value="Finland">Finland</option>
+                        <option value="Denmark">Denmark</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Enquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-wraper">
+        <div class="container">
+            <div class="footer">
+                <div class="footer-box">
+                    <h3>About Kansas</h3>
+                    <p>Kansas Education Consultancy has been helping students achieve their dreams of international education since 2010.</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Study Destinations</a></li>
+                        <li><a href="#">Test Preparation</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+                    <p><i class="fas fa-phone"></i> +977 1 4123456</p>
+                    <p><i class="fas fa-envelope"></i> info@kansas.com.np</p>
+                </div>
+                <div class="footer-box newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and offers</p>
+
+                    <?php if ($news_status === 'success'): ?>
+                        <p class="status-message status-success">Thank you! You are subscribed.</p>
+                    <?php elseif ($news_status === 'error'): ?>
+                        <p class="status-message status-error">Sorry, there was a problem. Try again.</p>
+                    <?php endif; ?>
+
+                    <form action="process.php" method="POST">
+                        <input type="hidden" name="form_type" value="newsletter">
+                        <input 
+                            type="email" 
+                            name="newsletter_email" 
+                            placeholder="Your Email" 
+                            required
+                        >
+                        <button type="submit" class="btn">
+                            Subscribe <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright-section">
+                <p>&copy; 2023 Kansas Education Consultancy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple JavaScript for responsive navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.innerWidth < 768) {
+                navbar.style.flexDirection = 'column';
+            }
+
+            window.addEventListener('resize', function() {
+                if (window.innerWidth < 768) {
+                    navbar.style.flexDirection = 'column';
+                } else {
+                    navbar.style.flexDirection = 'row';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
