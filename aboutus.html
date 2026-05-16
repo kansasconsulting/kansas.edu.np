@@ -13,17 +13,17 @@
   <body>
     <div class="header-topbar-wrapper">
       <div class="header-topbar">
-      <div class="header-top">
-        <p>Kansas National and International 
-           Study Consulting Service</p>
-      </div>
-      <div class="email-info">
-        <span class="emailinfo">Email:</span>
-        <a href="">info.kansasconsulting@gmail.com</a>
+        <div class="header-top">
+          <p>Kansas National and International 
+             Study Consulting Service</p>
+        </div>
+        <div class="email-info">
+          <span class="emailinfo">Email:</span>
+          <a href="">info.kansasconsulting@gmail.com</a>
+        </div>
       </div>
     </div>
 
-    </div>
     <div class="kansas-logo-wrapper">
       <div class="kansas-logo">
         <div class="kansas-logo-left">
@@ -62,10 +62,9 @@
             </form>
           </div>
         </div>
-        
-        
       </div>
     </div>
+
     <div class="navbar-wrapper">
       <div class="navbar">
         <div class="navbar-box">
@@ -86,63 +85,53 @@
     <div class="abroad-dream-image-wrapper">
       <div class="student-thoughts">
         <h2 class="aboutus">About Us</h2>
-        
       </div>
       <img
         src="images/service-17.jpg"
         alt=""
       />
     </div>
-   <div class="immigration-header-wrapper">
-    <div class="immigration-header">
+
+    <div class="immigration-header-wrapper">
+      <div class="immigration-header">
         <div class="immigration-header-left">
-            <h3 class="immigration-tittle">We Make A Difference</h3>
-            <div class="immigration">
+          <h3 class="immigration-tittle">We Make A Difference</h3>
+          <div class="immigration">
             <h2>Welcome to immigration <br>
             <span class="Advisory">Advisory </span> services</h2>
-        </div>
-        <div class="immigration-text">
+          </div>
+          <div class="immigration-text">
             <p>We help investors and entrepreneurs secure citizenship in major nations <br> with 
                  our top immigration programs. We have a decade of experience <br> assisting requirements.</p>
-        </div>
-        <div class="immigration-dec">
+          </div>
+          <div class="immigration-dec">
             <h4>25+ Years of experience in visa <br> and immigrations services</h4>
-        </div>
-        <div class="immigration-description">
+          </div>
+          <div class="immigration-description">
             <p>Our global logistics expertise, advanced supplychain technology & customized logistics  loream iposum conatry solutions will help.</p>
-        </div>
-        <div class="realagent">
+          </div>
+          <div class="realagent">
             <h4>200+ Real Agent</h4>
+          </div>
         </div>
 
-
-        </div>
-
-
-        
         <div class="immigration-header-right">
-            <div class="immigration-images">
-                <img src="images/col-bgimage-7.png" alt="">
-            </div>
+          <div class="immigration-images">
+            <img src="images/col-bgimage-7.png" alt="">
+          </div>
         </div>
-        
+      </div>
     </div>
 
-   </div>
-
-
-   <div class="visa-sorted">
-    <h2>Your visa sorted in just 4 super <br>   simple <span class="steps">steps</span></h2>
-</div>
-
+    <div class="visa-sorted">
+      <h2>Your visa sorted in just 4 super <br>   simple <span class="steps">steps</span></h2>
+    </div>
 
     <div class="Sucess-students-wrapper">
       <div class="Sucess-students">
         <div class="Sucess-students-images">
           <div class="sucess-images">
-            <img
-              src="images/process-1.jpg"
-            />
+            <img src="images/process-1.jpg" />
           </div>
           <div class="student-name">
             <h3>Complete Online Form</h3>
@@ -151,9 +140,7 @@
         </div>
         <div class="Sucess-students-images">
           <div class="sucess-images">
-            <img
-              src="images/process-2.png"
-            />
+            <img src="images/process-2.png" />
           </div>
           <div class="student-name">
             <h3>Documents & Payments</h3>
@@ -162,9 +149,7 @@
         </div>
         <div class="Sucess-students-images">
           <div class="sucess-images">
-            <img
-              src="images/process-3.png"
-            />
+            <img src="images/process-3.png" />
           </div>
           <div class="student-name">
             <h3>Direct Interview Guidelance</h3>
@@ -173,9 +158,7 @@
         </div>
         <div class="Sucess-students-images">
           <div class="sucess-images">
-            <img
-              src="images/process-4.jpg"
-            />
+            <img src="images/process-4.jpg" />
           </div>
           <div class="student-name">
             <h3 class="ReceiveVisa">Receive Visa</h3>
@@ -184,8 +167,6 @@
         </div>
       </div>
     </div>
-
-  
 
     <div class="footer-wraper">
       <div class="footer">
@@ -216,14 +197,12 @@
           <ul>
             <li>
               <a href="">
-                Kansas National and International Study Consulting service </a
-              >
+                Kansas National and International Study Consulting service
+              </a>
             </li>
             <li><a href="https://edusanjal.com/college/kathmandu-college-of-technology/">Lokanthali,Bhaktapur</a></li>
-           
             <li><a href="">Whatsapp</a></li>
             <li><a href="">Viber</a></li>
-
             <li><a href="https://www.facebook.com/profile.php?id=61553378745268">Facebook Messenger</a></li>
             <li><a href="">info.kansasconsulting@gmail.com</a></li>
           </ul>
@@ -280,11 +259,17 @@
         </div>
       </div>
     </div>
+
+    <!-- Updated copyright with automatic year -->
     <div class="copyright-section">
       <p>
-        Copyright © 2026. Kansas National and International Consultancy
+        Copyright © <span id="year"></span>. Kansas National and International Consultancy
         Service Pvt.Ltd. All rights reserved.
       </p>
     </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
