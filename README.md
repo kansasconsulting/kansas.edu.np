@@ -122,7 +122,7 @@
 <body>
 
   <header>
-    <h1>Global Education Consultancy</h1>
+    <h1>Kansas National & International Study Consulting Service</h1>
     <p>Your Future Begins Here</p>
   </header>
 
@@ -164,12 +164,12 @@
 
   <section class="contact">
     <h2>Contact Us</h2>
-    <p>Email: info@educationconsultancy.com</p>
-    <p>Phone: +977-9800000000</p>
+    <p>Email: info.kansasconsulting@gmail.com</p>
+    <p>Phone: +977-9769327855</p>
   </section>
 
   <footer>
-    <p>© 2026 Global Education Consultancy. All Rights Reserved.</p>
+    <p>© 2026 Kansas National & International Study Consulting Service. All Rights Reserved.</p>
   </footer>
 
 </body>
